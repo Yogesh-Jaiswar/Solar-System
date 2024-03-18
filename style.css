@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #000;
+}
+
+#solar-system {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#neptune-ring {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: neptuneRing 600s linear infinite;
+
+}
+#neptune {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(to top, blue, black);
+    box-shadow: 0 5px 30px blue;
+    left: -20px;
+    border-radius: 50%;
+}
+#neptune>p {
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    transform: rotate(270deg);
+}
+
+#uranus-ring {
+    position: relative;
+    height: 85%;
+    width: 85%;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: uranusRing 300s linear infinite;
+}
+#uranus {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(to top, blue, skyblue);
+    box-shadow: 0 5px 30px lightseagreen;
+    left: -20px;
+    border-radius: 50%;
+}
+#uranus>p {
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    transform: rotate(270deg);
+}
+
+#saturn-ring {
+    position: relative;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: saturnRing 100s linear infinite;
+}
+#saturn {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(to top, darkgoldenrod, white, darkgoldenrod);
+    left: -20px;
+    box-shadow: 0 5px 30px darkgoldenrod;
+    border-radius: 50%;
+}
+#saturn>p {
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    transform: rotate(270deg);
+}
+#jupiter-ring {
+    position: relative;
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: jupiterRing 43s linear infinite;
+
+}
+#jupiter {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background: linear-gradient(to top, brown, chocolate, brown);
+    left: -30px;
+    box-shadow: 0 5px 30px chocolate;
+    border-radius: 50%;
+}
+#jupiter>p {
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    transform: rotate(270deg);
+}
+#mars-ring {
+    position: relative;
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: marsRing 30s linear infinite;
+
+}
+#mars {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(to top, red, orange);
+    left: -15px;
+    box-shadow: 0 5px 30px orangered;
+    border-radius: 50%;
+}
+#mars>p {
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    transform: rotate(270deg);
+}
+
+#earth-ring {
+    position: relative;
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: earthRing 30s linear infinite;
+
+}
+#earth {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(to top right, blue, green, white);
+    left: -20px;
+    box-shadow: 0 5px 10px skyblue;
+    border-radius: 50%;
+}
+#earth>p {
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    transform: rotate(270deg);
+}
+
+#venus-ring {
+    position: relative;
+    height: 65%;
+    width: 65%;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: venusRing 15s linear infinite;
+}
+
+#venus {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(to top right, goldenrod, black);
+    left: -10px;
+    box-shadow: 0 5px 10px goldenrod;
+    border-radius: 50%;
+    /* background-color: goldenrod; */
+}
+#venus>p {
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    transform: rotate(270deg);
+}
+#mercury-ring {
+    position: relative;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: mercuryRing 10s linear infinite;
+}
+
+#mercury {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(to top, silver, black);
+    left: -10px;
+    box-shadow: 0 5px 10px silver;
+    border-radius: 50%;
+}
+#mercury>p {
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    transform: rotate(270deg);
+}
+
+@keyframes mercuryRing {
+    from {
+        transform: rotate(0deg);
+    }to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes venusRing {
+    from {
+        transform: rotate(0deg);
+    }to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes earthRing {
+    from {
+        transform: rotate(0deg);
+    }to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes marsRing {
+    from {
+        transform: rotate(0deg);
+    }to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes jupiterRing {
+    from {
+        transform: rotate(0deg);
+    }to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes saturnRing {
+    from {
+        transform: rotate(0deg);
+    }to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes uranusRing {
+    from {
+        transform: rotate(0deg);
+    }to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes neptuneRing {
+    from {
+        transform: rotate(0deg);
+    }to {
+        transform: rotate(360deg);
+    }
+}
